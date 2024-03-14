@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Dev Stygian</title>
 
         <link rel="stylesheet" href="main.css" />
     </head>
@@ -12,7 +12,7 @@
         <div class="homepage">
             <div class="mainpage">
                 <h1>Hey, I am Stygian</h1>
-                <p>BSIT - Student</p>
+                <p>Full-stack Web Developer</p>
             
                 <ul class="headerls">
                     <li><a href="#About">About</a></li>
@@ -21,34 +21,75 @@
                 </ul>
             </div>
 
+            <section id="intro">
+                <span class="bubble" style="left: 40%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 3%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 80%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 45%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 60%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 45%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 9%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 86%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 16%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 66%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 30%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 35%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 16%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 65%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 24%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 24%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 24%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 86%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 40%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 30%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 90%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 45%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 40%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 3%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 35%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 16%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 66%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 50%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 45%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 30%; bottom: -40px;"></span>
+                <span class="bubble" style="left: 80%; bottom: -40px;"></span>
+            </section>
+
             <div class="aboutpage" id="About">
                 <div class="Aboutme">
                     <h1>About me</h1>
                 </div>
                 <div class="aboutmeText">
-                    <p>I major in computer science and I'm a self-taught frontend developer. I <br>
-                        enjoy the creative aspect of building web pages that not only look visually <br>
-                        appealing but also function smoothly. My interest in frontend development started<br>
-                        back in summer 2022 when I decided to learn HTML & CSS to create some buttons <br>
-                        I found nice on the internet. I like the satisfaction that comes with making <br>
-                        the designs come to life. I am always eager to learn and grow as a developer <br>
+                    <p>I major in computer science and I'm a self-taught frontend developer. I 
+                        enjoy the creative aspect of building web pages that not only look visually 
+                        appealing but also function smoothly. My interest in frontend development started
+                        back in summer 2022 when I decided to learn HTML & CSS to create some buttons 
+                        I found nice on the internet. I like the satisfaction that comes with making 
+                        the designs come to life. I am always eager to learn and grow as a developer 
                         and keep up with the latest technologies.</p>
                 </div>
-            </div>
+            
 
-            <div class="DevelopmentSkills" id="Projects">
-                <h1>Development Skills</h1>
-                <ul class="listSkills">
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-
-            <div class="Project">
+                <div class="DevelopmentSkills" >
+                    <h1>Development Skills</h1>
+                    <ul class="listSkills">
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <ul class="listSkills-2">
+                        <li>Git</li>
+                    </ul>
+                </div>
+        </div>
+            <div class="Project" id="Projects">
                 <div class="projectWord">
                     <h1>Some projects I've done</h1>
                 </div>
@@ -67,9 +108,7 @@
                 
                     <div class="mail">
                         <label>
-                
                             <input class="input" type="name" name="name" placeholder="Name" required>
-                
                             <input class="input" type="email" name="email" placeholder="Email Address" required>
                         </label>
                     </div>
@@ -78,10 +117,12 @@
                         <label>
                             <textarea class="area" type="message" id="message" placeholder="Leave a Message" required></textarea>
                         </label>
-                    </div>                
+                    </div>     
+
                     <div class="sendEmail">
                         <button class="submit" type="submit">Send</button>
                     </div>
+
                     <script>
                         document.getElementById('container').addEventListener('submit', function () {
                             location.reload();
