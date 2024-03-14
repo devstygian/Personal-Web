@@ -337,5 +337,10 @@ html {
 
 
 
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+}
+
+
 
 
