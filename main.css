@@ -11,178 +11,383 @@ body {
     background-color: #000000;
     color: #ffff;
 }
-
-
-    /*MAIN PAGE*/
-.homepage{
+/* MAIN PAGE */
+.homepage {
     justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
 }
-.mainpage{
-    padding-top: 5%;
-    padding-bottom: 18%;
 
+.mainpage {
+    padding-top: 15%;
+    padding-bottom: 20%;
 }
-.mainpage h1{
-    margin-top: 10%;
-    font-size: 70px;
+
+.mainpage h1 {
+    font-size: 4rem;
+    /* Large font size for desktop */
 }
+
 .mainpage p {
+    font-size: 2rem;
+    /* Large font size for desktop */
     margin-top: 2%;
-    font-size: 30px;
- 
 }
+
 .headerls {
-    margin-top: 2%;
-    font-size: 15px;
+    font-size: 1rem;
+    /* Medium font size for desktop */
     display: flex;
     justify-content: center;
     font-weight: bolder;
 }
+
 .headerls li {
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
     display: flex;
-    padding: 10px 30px;
+    padding: 1rem 2rem;
+    /* Medium padding for desktop */
     background-color: #ff6004;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    border-radius: 2rem;
+    /* Medium border radius for desktop */
+    margin: 1rem;
+    /* Medium margin for desktop */
 }
-.headerls li a{
+
+.headerls li a {
     color: black;
     text-decoration: none;
-    
 }
-.headerls li:hover{
+
+.headerls li:hover {
     background-color: #ffffff;
 }
 
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .mainpage h1 {
+        font-size: 3rem;
+        /* Decrease font size for tablets */
+    }
 
-    /*About ME*/
-.aboutpage{
-    padding-top: 15%;
+    .mainpage p {
+        font-size: 1.5rem;
+        /* Decrease font size for tablets */
+    }
+
+    .headerls {
+        font-size: 1.2rem;
+        /* Decrease font size for tablets */
+    }
+
+    .headerls li {
+        padding: 0.8rem 1.5rem;
+        /* Decrease padding for tablets */
+        border-radius: 1.5rem;
+        /* Decrease border radius for tablets */
+        margin: 0.8rem;
+        /* Decrease margin for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mainpage h1 {
+        font-size: 2.5rem;
+        /* Decrease font size for mobile */
+    }
+
+    .mainpage p {
+        font-size: 1.2rem;
+        /* Decrease font size for mobile */
+    }
+
+    .headerls {
+        font-size: 1rem;
+        /* Decrease font size for mobile */
+    }
+
+    .headerls li {
+        padding: 0.6rem 1rem;
+        /* Decrease padding for mobile */
+        border-radius: 1rem;
+        /* Decrease border radius for mobile */
+        margin: 0.5rem;
+        /* Decrease margin for mobile */
+    }
+}
+
+/* About ME */
+.aboutpage {
+    padding-top: 5%;
     padding-bottom: 25%;
     background-color: #282a3a;
     text-align: left;
     justify-content: left;
-   
+}
 
-}
-.Aboutme{
-    margin-left: 70px;
-    font-size: 20px;
-    padding-bottom: 30px;
+.Aboutme {
+    margin-left: 5%;
+    /* Adjusted for smaller screens */
+    font-size: 2vw;
+    /* Responsive font size */
+    padding-bottom: 3vw;
+    /* Responsive padding */
     color: #ff6004;
-  
 }
+
 .aboutmeText {
-    margin-left: 70px;
-    font-size: 20px;
-    justify-content: left;
-    text-align: left;
+    margin-left: 5%;
+    /* Adjusted for smaller screens */
+    font-size: 1.5vw;
+    /* Responsive font size */
+    
     text-decoration: none;
-    padding-right: 45%;
+    padding-right: 50%;
+    /* Adjusted for smaller screens */
 }
-    /*STOCKS PAGE / LANGUAGE PAGE*/
-.DevelopmentSkills{
-    margin-top: -18%;
-    font-size: 20px;
-   
-   
-   
+
+/* STOCKS PAGE / LANGUAGE PAGE */
+.DevelopmentSkills {
+    margin-top: -21.5%;
+    /* Adjusted for smaller screens */
+    font-size: 1vw;
+    /* Responsive font size */
 }
-.DevelopmentSkills h1{
-    margin-right: 9%;
+
+.DevelopmentSkills h1 {
+    margin-right: 20%;
     color: #ff6004;
     justify-content: right;
     text-align: right;
 }
-.listSkills{
+
+.listSkills,
+.listSkills-2 {
     margin-top: 2%;
-    margin-right: 4%;
-    font-size: 15px;
+    margin-right: 5%;
+    /* Adjusted for smaller screens */
+    font-size: 1.2vw;
+    /* Responsive font size */
     display: flex;
     justify-content: right;
+}
+
+.listSkills li,
+.listSkills-2 li {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding: 1vw 1vw;
+    /* Responsive padding */
+    background-color: #345669;
+    border-radius: 1vw;
+    /* Responsive border radius */
+    margin: 1vw;
+    /* Responsive margin */
+}
+
+.listSkills-2 {
+    margin-right: 20.5%;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .Aboutme {
+        font-size: 4vw;
+        
+        /* Increase font size for smaller screens */
+    }
+
+    .aboutmeText {
+        font-size: 3vw;
+        /* Increase font size for smaller screens */
+    }
   
-}
-.listSkills li{
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    padding: 10px 15px;
-    background-color: #345669;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.listSkills-2{
-margin-top: 10px;
-    margin-right: 20%;
-    font-size: 15px;
-    display: flex;
-    justify-content: right;
-}
-.listSkills-2 li{
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    padding: 10px 15px;
-    background-color: #345669;
-    border-radius: 10px;
+
+    .DevelopmentSkills {
+        margin-top: 10%;
+        
+        /* Adjust margin for smaller screens */
+        font-size: 1vw;
+        /* Increase font size for smaller screens */
+    }
+
+    .listSkills,
+    .listSkills-2 {
+        margin-right: 17%;
+        font-size: 2.5vw;
+        /* Increase font size for smaller screens */
+    }
+    .listSkills-2{
+        margin-right: 45%;
+    }
 }
 
-
-    /*PROJECTS PAGE*/
-.Project{
-    /*border: rgb(255, 0, 76) solid;*/
+/* PROJECTS PAGE */
+.Project {
     padding-top: 10%;
     padding-bottom: 10%;
-    font-size: 20px;
+    font-size: 2vw;
+    /* Responsive font size */
 }
-.projectWord{
+
+.projectWord {
     color: #ff6004;
 }
-.listProject{
+
+.listProject {
     margin-top: 2%;
-    font-size: 15px;
+    font-size: 1.5vw;
+    /* Responsive font size */
     display: flex;
     justify-content: center;
 }
-.listProject li{
+
+.listProject li {
     text-decoration: none;
     text-align: center;
-    padding-bottom: 20%;
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 1vw 2vw;
+    /* Responsive padding */
     display: flex;
     border: red 1px solid;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 5vw;
+    /* Responsive border radius */
+    margin: 1vw;
+    /* Responsive margin */
 }
-.listProject a{
+
+.listProject a {
     text-decoration: none;
     color: #ffffff;
 }
 
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
 
-    /*EMAIL PAGE*/
+    .Aboutme,
+    .aboutmeText,
+    .DevelopmentSkills,
+    .listSkills,
+    .listSkills-2,
+    .Project {
+        font-size: 3vw;
+        /* Adjusted font size for tablets */
+    }
+
+    .listProject li {
+      
+        padding: 1.5vw 3vw;
+        /* Adjusted padding for tablets */
+        border-radius: 3vw;
+        /* Adjusted border radius for tablets */
+        margin: 1.5vw;
+        /* Adjusted margin for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Aboutme,
+    .aboutmeText,
+    .DevelopmentSkills,
+    .listSkills,
+    .listSkills-2,
+    .Project {
+        font-size: 4vw;
+        /* Adjusted font size for mobile */
+    }
+
+    .listProject li {
+        padding: 2vw 4vw;
+        /* Adjusted padding for mobile */
+        border-radius: 4vw;
+        /* Adjusted border radius for mobile */
+        margin: 2vw;
+        /* Adjusted margin for mobile */
+    }
+}
+/* PROJECTS PAGE */
+.Project {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 20px;
+}
+
+.projectWord {
+    color: #ff6004;
+}
+
+.listProject {
+    margin-top: 2%;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+    justify-content: center;
+}
+
+.listProject li {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    /* Adjust padding */
+    display: flex;
+    border: 1px solid #ff6004;
+    /* Update border color */
+    border-radius: 25px;
+    /* Decrease border radius */
+    margin: 10px;
+    /* Adjust margin */
+}
+
+.listProject a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .Project {
+        font-size: 18px;
+        /* Decrease font size for tablets */
+    }
+
+    .listProject li {
+        font-size: 14px;
+        /* Decrease font size for tablets */
+        padding: 8px 16px;
+        /* Decrease padding for tablets */
+        border-radius: 20px;
+        /* Decrease border radius for tablets */
+        margin: 8px;
+        /* Decrease margin for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Project {
+        font-size: 16px;
+        /* Decrease font size for mobile */
+    }
+
+    .listProject li {
+        font-size: 12px;
+        /* Decrease font size for mobile */
+        padding: 6px 12px;
+        /* Decrease padding for mobile */
+        border-radius: 15px;
+        /* Decrease border radius for mobile */
+        margin: 6px;
+        /* Decrease margin for mobile */
+    }
+}
+/* EMAIL PAGE */
 .container {
-    /*border: red 1px solid;*/
-    margin-left: 28%;
-    margin-right: 28%;
+    margin-left: 25%;
+    margin-right: 25%;
     border-radius: 25px;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -190,17 +395,19 @@ margin-top: 10px;
     display: flex;
     text-align: center;
     background-color: #2d3041;
-   border-bottom: #ff6004 5px solid;
+    border-bottom: #ff6004 5px solid;
 }
+
 .contact {
     text-align: center;
     font-weight: bolder;
     margin-top: 0%;
     margin-bottom: 5%;
     color: #ff6004;
-    font-size: 35px;
-
+    font-size: 3vw;
+    /* Adjust font size using viewport width units */
 }
+
 .input,
 .msg .area {
     width: 100%;
@@ -208,52 +415,118 @@ margin-top: 10px;
     box-sizing: border-box;
     margin-bottom: 25px;
     border: 2px solid #04ffff;
-    font-size: 15px;
+    font-size: 1vw;
+    /* Adjust font size using viewport width units */
     border-radius: 5px;
     outline: none;
-    transform: all 0.5s ease;
-    background-color: transparent;
+    transition: all 0.5s ease;
     background-color: #000000;
+    color: #0cec10;
 }
+
 .mail .input {
-width: 48%;
+    width: 48%;
     float: left;
     margin-right: 4%;
 }
+
 .mail .input:last-child {
     margin-right: 0;
-
 }
+
 .msg .area {
-    height: 200px;
-
+    height: 15vw;
+    /* Adjust height using viewport width units */
 }
+
 .sendEmail {
     text-align: center;
 }
+
 .submit {
-    padding: 10px 20px;
+    padding: 1vw 1vw;
+    /* Adjust padding using viewport width units */
     width: 25%;
     background: #000000;
-    height: 50%;
     line-height: 180%;
     color: rgb(255, 255, 255);
-    font-size: 13px;
-    font-weight:900;
+    font-size: 1vw;
+    /* Adjust font size using viewport width units */
+    font-weight: 900;
     outline: none;
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     border-style: none;
-
 }
-.submit:hover{
+
+.submit:hover {
     background-color: #ffffff;
     color: #000000;
 }
 
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 
-    /*FOOTER*/
+    .contact {
+        font-size: 4vw;
+        /* Decrease font size for tablets */
+    }
+
+    .input,
+    .msg .area {
+        font-size: 3vw;
+        /* Decrease font size for tablets */
+    }
+
+    .msg .area {
+        height: 10vw;
+        /* Decrease height for tablets */
+    }
+
+    .submit {
+        padding: 3vw 5vw;
+        /* Adjust padding for tablets */
+        font-size: 2vw;
+        /* Decrease font size for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .contact {
+        font-size: 6vw;
+        /* Decrease font size for mobile */
+    }
+
+    .input,
+    .msg .area {
+        font-size: 4vw;
+        /* Decrease font size for mobile */
+    }
+
+    .msg .area {
+        height: 20vw;
+        /* Adjust height for mobile */
+    }
+
+    .submit {
+        padding: 4vw 6vw;
+        /* Adjust padding for mobile */
+        font-size: 3vw;
+        /* Decrease font size for mobile */
+    }
+}
+
+/*FOOTER*/
 .footer {
     margin-top: 0;
     padding: 20px 0;
@@ -338,7 +611,4 @@ html {
 @media (max-width: 768px) {
     /* Styles for screens smaller than 768px */
 }
-
-
-
 
