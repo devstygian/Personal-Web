@@ -103,20 +103,20 @@
             </div>
 
             <div class="container" id="Contact">
-                <form action="https://formspree.io/f/moqzpayb" method="POST">
+                <form action="https://formspree.io/f/xeqylyel" method="POST">
                 
                     <h1 class="contact">Get In Touch</h1>
                 
                     <div class="mail">
                         <label>
-                            <input class="input" type="name" name="name" placeholder="Name" required>
-                            <input class="input" type="email" name="email" placeholder="Email Address" required>
+                            <input class="input" type="name" name="Name :" placeholder="Name" required>
+                            <input class="input" type="email" name="Email : " placeholder="Email Address" required>
                         </label>
                     </div>
                 
                     <div class="msg">
                         <label>
-                            <textarea class="area" type="message" id="message" placeholder="Leave a Message" required></textarea>
+                            <textarea class="area" type="message" name="Message : " id="message" placeholder="Leave a Message" required></textarea>
                         </label>
                     </div>     
 
@@ -124,17 +124,6 @@
                         <button class="submit" type="submit">Send</button>
                     </div>
 
-                    <script>
-                        document.getElementById('container').addEventListener('submit', function () {
-                            location.reload();
-                        });
-                         document.getElementById('container').addEventListener('submit', function (event) {
-                            event.preventDefault(); // Prevent form submission
-                            // Perform form validation and registration logic here
-                            // Replace this with your actual registration logic
-                            alert('Your message has been delivered.');
-                        });
-                    </script>
                 </form>
             </div>
 
